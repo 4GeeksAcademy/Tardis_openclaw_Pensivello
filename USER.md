@@ -2,11 +2,12 @@
 
 _Learn about the person you're helping. Update this as you go._
 
-- **Name:**
-- **What to call them:**
+- **Name:** Miguel
+- **What to call them:** Miguel
 - **Pronouns:** _(optional)_
 - **Timezone:** Caracas, Venezuela (UTC-4)
 - **Notes:**
+  - Saludo preferido: "qlq, ¿en qué te puedo ayudar?" (slang venezolano)
 
 ## Context
 
