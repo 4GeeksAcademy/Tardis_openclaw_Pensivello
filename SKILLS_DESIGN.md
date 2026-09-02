@@ -77,13 +77,47 @@ Los eventos con hora se detectan mediante regex:
 
 ---
 
+## 4. Resumen de Correos
+
+**Trigger:** Cron — 8:00 PM (UTC-4 / Caracas)
+
+### Flujo
+1. Buscar correos no leídos de hoy en Gmail (`is:unread after:{fecha}`)
+2. Armar resumen: remitente, asunto, snippet (máx 10 correos)
+3. Enviar por Telegram en HTML
+
+### Apps involucradas
+- 📧 GoogleMailV2CLIAPI → `message` (gmail_find_email)
+- 💬 TelegramCLIAPI → `send_message`
+
+### Fixed values
+- Chat ID: `1382253586` (@Pensivello)
+- Zona horaria: America/Caracas (UTC-4)
+- Formato: HTML
+- Query: `is:unread after:YYYY-MM-DD` (fecha del día)
+- Máximo 10 correos en el resumen
+
+### Script
+`scripts/resumen-correos.py`
+
+---
+
 ## Cron del sistema
 
 ```
-0 11 * * *  → scripts/resumen-diario.py    (7:00 AM Caracas)
-30 23 * * * → scripts/recordatorio-nocturno.py (7:30 PM Caracas)
+0 11 * * *  → scripts/resumen-diario.py       (7:00 AM Caracas)
+30 23 * * * → scripts/recordatorio-nocturno.py  (7:30 PM Caracas)
+0 0 * * *  → scripts/resumen-correos.py        (8:00 PM Caracas)
 ```
 
 ## Skills guardados en Zapier
 - `resumen matutino`
 - `planificacion nocturna`
+- `resumen correos`
+
+## Apps conectadas (5)
+- 📅 Google Calendar
+- 📁 Google Drive
+- 📝 Google Docs
+- 💬 Telegram
+- 📧 Gmail

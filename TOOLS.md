@@ -13,7 +13,8 @@ Skills define _how_ tools work. This file is for _your_ specifics — the stuff 
 
 ## Zapier MCP
 
-- **4 apps conectadas:** Google Calendar, Google Drive, Google Docs, Telegram
+- **5 apps conectadas:** Google Calendar, Google Drive, Google Docs, Telegram, Gmail
+- **Skill guardados:** "resumen matutino", "planificacion nocturna", "resumen correos"
 - **Cuenta:** miguel.eduardo2401@gmail.com
 - **Skill guardado:** "resumen matutino"
 
