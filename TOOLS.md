@@ -27,3 +27,15 @@ Skills define _how_ tools work. This file is for _your_ specifics — the stuff 
 ## N8N
 
 - _(pendiente de configurar)_
+
+## 4Geeks Academy
+
+- **API Base:** https://breathecode.herokuapp.com
+- **Token (Miguel):** `ac351c8353b0fc7b3b347ca6f9fd3bcbcd3c5a75`
+- **Academy Token (público):** `c6fe193405438832e2790dfb1d6253200fe16775`
+- **User ID:** 21636
+- **Email:** migueleduardo2401@gmail.com
+- **Autenticación:** `Authorization: Token <token>`
+- **Endpoint principal:** `/v1/admissions/user/me`
+- **Cohort activo (bootcamp principal):** latam-aie-pt-3 (AI Engineer, Stage: STARTED, day 24)
+- **Pending projects count (bootcamp):** 7
