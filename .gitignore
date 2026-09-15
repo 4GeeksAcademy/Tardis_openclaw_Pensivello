@@ -1,0 +1,8 @@
+# Environment variables
+.env
+scripts/.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
